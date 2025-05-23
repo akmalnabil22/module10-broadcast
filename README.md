@@ -21,4 +21,21 @@ Ketika server dijalankan, server akan menunggu koneksi dari client. Saat sebuah 
 ## 2.2 Modifying the websocket port  
 Setelah mengubah port pada client, kita juga harus mengubah port pada server sehingga server dan client bisa berkomunikasi pada port yang sama. Server juga menggunakan protocol websocket untuk berkomunikasi.  
 ![](./img/websocket.png)  
-Pada gambar di atas, terlihat bahwa server membungkus TcpStream dalam bentuk WebSocketStream untuk membangun koneksi dengan client.
+Pada gambar di atas, terlihat bahwa server membungkus TcpStream dalam bentuk WebSocketStream untuk membangun koneksi dengan client.  
+
+
+## 2.3 Small changes. Add some information to client  
+server
+![](./img/server_modified.png)
+
+client 1
+![](./img/client1_modified.png)
+
+client 2
+![](./img/client2_modified.png)
+
+client 3
+![](./img/client3_modified.png)
+
+
+Sekarang server akan mengirimkan alamat dari masing masing client bersama dengan pesan yang dikirimkan
